@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="app">
 
-            <ul v-if="arrayMail.length === 10">
-                <li v-for="mail in arrayMail">{{ mail }}</li>
-            </ul>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-        <!-- link API AXIONS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <div id="app">
 
-        <!--collegamento a Vue JS-->
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <ul v-if="arrayMail.length === 10">
+            <li v-for="mail in arrayMail">{{ mail }}</li>
+        </ul>
+    </div>
 
-        <!--collegamento al file personalizzato di JavaScript-->
-        <script type="text/javascript" src="./js/script.js"></script>
-    </body>
+    <!-- link API AXIONS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--collegamento a Vue JS-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!--collegamento al file personalizzato di JavaScript-->
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
 </html>
